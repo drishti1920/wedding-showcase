@@ -90,8 +90,7 @@ const Footer = () => {
                 (item) => (
                   <Link
                     key={item}
-{/*                     to={`/${item.toLowerCase().replace(/\s+/g, '-')}`} */}
-   to={
+                       to={
                         item === "Home"
                           ? "/"
                           : `/${item.toLowerCase().replace(/\s+/g, "-")}`
