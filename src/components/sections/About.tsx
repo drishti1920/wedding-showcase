@@ -20,16 +20,10 @@ const About: React.FC = () => {
 
         <div className="lg:px-4">
           <p className="font-serif text-lg lg:text-xl leading-relaxed text-gray-800 mb-8 lg:text-left text-center">
-            Considered to be the epitome of Modern Photography and Filmmaking,
-            HOTC has transformed the Indian Wedding landscape on a regular
-            basis. For almost a decade House On The Clouds has been creating
-            photographs and films which are timeless and have been etched in
-            memories of thousands of people forever.
+          The Story Timeliners is redefining the art of wedding photography and filmmaking, capturing love stories with an unmatched blend of creativity and emotion. Specializing in candid photography, cinematography, videography, and timeless portraits, we turn fleeting moments into lifelong memories.
           </p>
           <p className="font-serif text-lg lg:text-xl leading-relaxed text-gray-800 mb-8 lg:text-left text-center">
-            Awarded as the Wedding Filmmaker of the year for four consecutive
-            years at the Weddingsutra awards along with numerous other awards
-            HOTC is the only company listed on IMDB for its award winning films.
+          With a passion for storytelling, we go beyond traditional wedding coverage, crafting visually stunning narratives that reflect the essence of each couple. Our team ensures that every frame is infused with authenticity, making your special day unforgettable. At The Story Timeliners, we don’t just document weddings—we create cinematic experiences that you can relive forever.
           </p>
         </div>
 

@@ -104,7 +104,7 @@ const AboutUs = () => {
           className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8" 
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
-          At WedVision, we believe every love story is unique and deserves to be captured with artistry and authenticity. We're not just photographers; we're storytellers who preserve the emotional journey of your special day through our carefully crafted visual narratives.
+          At TheStoryTimeliners, we believe every love story is unique and deserves to be captured with artistry and authenticity. We're not just photographers, we're storytellers who preserve the emotional journey of your special day through our carefully crafted visual narratives.
         </p>
         <p 
           className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed" 
