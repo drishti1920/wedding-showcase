@@ -90,7 +90,12 @@ const Footer = () => {
                 (item) => (
                   <Link
                     key={item}
-                    to={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+{/*                     to={`/${item.toLowerCase().replace(/\s+/g, '-')}`} */}
+   to={
+                        item === "Home"
+                          ? "/"
+                          : `/${item.toLowerCase().replace(/\s+/g, "-")}`
+                      }
                     className="text-sm text-gray-500 hover:text-gray-800 transition-colors"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                   >
