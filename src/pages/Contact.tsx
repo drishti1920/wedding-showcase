@@ -84,34 +84,98 @@ const Contact = () => {
     }
   };
 
+  const sendToWhatsApp = () => {
+    // Format the message for WhatsApp
+    const whatsappMessage = `
+*New Booking Inquiry*
+------------------
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone}
+*Service:* ${formData.service}
+*Date:* ${formData.date}
+*Location:* ${formData.location}
+*Details:* ${formData.about}
+    `.trim();
+
+    // Your WhatsApp number - replace with your actual number
+    const whatsappNumber = '+918696144810'; // Assuming this is your number from the page
+    
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+  };
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+    
+  //   if (validateForm()) {
+  //     setIsSubmitting(true);
+      
+  //     // Simulate form submission
+  //     setTimeout(() => {
+  //       setIsSubmitting(false);
+  //       setSubmitSuccess(true);
+        
+  //       // Reset form after submission
+  //       setFormData({
+  //         name: '',
+  //         email: '',
+  //         phone: '',
+  //         about: '',
+  //         location: '',
+  //         date: '',
+  //         service: 'Wedding',
+  //       });
+        
+  //       // Reset success message after 5 seconds
+  //       setTimeout(() => setSubmitSuccess(false), 5000);
+  //     }, 1500);
+  //   }
+  // };
+
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (validateForm()) {
       setIsSubmitting(true);
       
-      // Simulate form submission
-      setTimeout(() => {
+      // Send data to WhatsApp and show success message
+      try {
+        sendToWhatsApp();
+        
+        // Show success message
+        setTimeout(() => {
+          setIsSubmitting(false);
+          setSubmitSuccess(true);
+          
+          // Reset form after submission
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            about: '',
+            location: '',
+            date: '',
+            service: 'Wedding',
+          });
+          
+          // Reset success message after 5 seconds
+          setTimeout(() => setSubmitSuccess(false), 5000);
+        }, 1000);
+      } catch (error) {
+        console.error("Error sending to WhatsApp:", error);
         setIsSubmitting(false);
-        setSubmitSuccess(true);
-        
-        // Reset form after submission
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          about: '',
-          location: '',
-          date: '',
-          service: 'Wedding',
-        });
-        
-        // Reset success message after 5 seconds
-        setTimeout(() => setSubmitSuccess(false), 5000);
-      }, 1500);
+        alert("There was an error sending your message. Please try again or contact us directly.");
+      }
     }
   };
-
   return (
     <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-12">
