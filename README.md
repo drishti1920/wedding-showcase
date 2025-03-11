@@ -3,7 +3,7 @@
 ## Overview
 The Story Timeliners is a beautifully crafted wedding photography website designed to showcase the portfolio, services, and expertise of *The Story Timeliners* team. The website offers an elegant and user-friendly experience, allowing potential clients to explore previous work, learn about the services offered, and get in touch for bookings.
 
-You can view the live demo on: `https://thestorytimeliners.netlify.app/`
+You can view the live demo on <a href="https://thestorytimeliners.netlify.app/" target="_blank" rel="noopener noreferrer">The Story Timeliners</a>.
 
 ## Features
 - **Homepage**: A visually appealing landing page with a hero section highlighting the brand and its services.
