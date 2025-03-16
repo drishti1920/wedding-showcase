@@ -13,7 +13,7 @@ const PhotoGrid: React.FC = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              className="absolute inset-0 w-full h-full object-cover  transition-transform duration-300 hover:scale-105"
             />
           </div>
         ))}

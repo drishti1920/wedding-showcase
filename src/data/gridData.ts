@@ -10,7 +10,7 @@ import grid4 from "/images/grid4.jpg";
 import grid5 from "/images/grid5.jpg";
 import grid6 from "/images/grid6.jpg";
 import grid7 from "/images/grid7.jpg";
-import grid8 from "/images/grid8.jpg";
+import grid8 from "/images/grid8.png";
 import grid9 from "/images/grid9.jpg";
 import grid10 from "/images/grid10.jpg";
 import grid11 from "/images/grid11.jpg";

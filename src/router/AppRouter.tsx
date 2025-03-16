@@ -8,6 +8,7 @@ import AboutUs from "../pages/AboutUs";
 import Layout from "../components/layout/Layout";
 import NotFound from "../pages/NotFound";
 import HomePage from "../pages/HomePage";
+import EventsPage from "../pages/Events";
 
 const AppRouter = () => {
   return (
@@ -18,6 +19,8 @@ const AppRouter = () => {
           <Route path="/films" element={<Films />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/photography/:coupleId" element={<CoupleDetail />} />
+          <Route path="/events" element={<EventsPage />} />
+          {/* <Route path="/events/:eventId" element={<CoupleDetail />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Route>

@@ -1,8 +1,8 @@
 import React from "react";
 
 import header from "/images/header.png";
-import about1 from "/images/about1.webp";
-import about2 from "/images/about2.webp";
+import about1 from "/images/about1.jpg";
+import about2 from "/images/about2.jpg";
 
 const About: React.FC = () => {
   return (
